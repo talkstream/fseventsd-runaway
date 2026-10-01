@@ -3,6 +3,8 @@
 
 Each log file is named by a hex FSEvents event ID that grows monotonically, so the
 difference between the last IDs of consecutive days approximates events per day.
+Caveats: right after a boot the ID can jump by billions without events (drop that
+day); the last day is usually partial, so its per-second average is too low.
 Usage: python3 events_per_day.py fseventsd-dir.txt
 """
 import collections, datetime, re, sys
