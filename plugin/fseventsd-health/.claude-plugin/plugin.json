@@ -1,0 +1,8 @@
+{
+  "name": "fseventsd-health",
+  "version": "1.0.0",
+  "description": "Warns at session start when the macOS fseventsd daemon has grown far beyond its memory budget, and prints the fix.",
+  "author": {
+    "name": "talkstream"
+  }
+}

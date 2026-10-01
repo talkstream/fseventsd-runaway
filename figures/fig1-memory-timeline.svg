@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="fseventsd memory over time, 27 Sep to 1 Oct, reaching 24 GB against a 30 MB budget">
+<title>fseventsd memory over time, 27 Sep to 1 Oct, reaching 24 GB against a 30 MB budget</title>
+<rect width="1200" height="675" fill="#fcfcfb"/>
+<text x="40" y="52" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="bold" fill="#0b0b0b" text-anchor="start">fseventsd grew to 24 GB — about 800× Apple’s own budget</text>
+<text x="40" y="88" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="normal" fill="#52514e" text-anchor="start">Memory of one macOS daemon, 27 Sep – 1 Oct (GMT+7)</text>
+<line x1="110" y1="570.0" x2="1130" y2="570.0" stroke="#dcdbd6" stroke-width="1"/>
+<text x="98" y="578.0" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">0</text>
+<line x1="110" y1="485.38461538461536" x2="1130" y2="485.38461538461536" stroke="#dcdbd6" stroke-width="1"/>
+<text x="98" y="493.38461538461536" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">5</text>
+<line x1="110" y1="400.7692307692308" x2="1130" y2="400.7692307692308" stroke="#dcdbd6" stroke-width="1"/>
+<text x="98" y="408.7692307692308" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">10</text>
+<line x1="110" y1="316.1538461538462" x2="1130" y2="316.1538461538462" stroke="#dcdbd6" stroke-width="1"/>
+<text x="98" y="324.1538461538462" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">15</text>
+<line x1="110" y1="231.53846153846155" x2="1130" y2="231.53846153846155" stroke="#dcdbd6" stroke-width="1"/>
+<text x="98" y="239.53846153846155" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">20</text>
+<line x1="110" y1="146.9230769230769" x2="1130" y2="146.9230769230769" stroke="#dcdbd6" stroke-width="1"/>
+<text x="98" y="154.9230769230769" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">25</text>
+<text x="98" y="122" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="end">GB</text>
+<line x1="110.0" y1="570" x2="110.0" y2="578" stroke="#52514e"/>
+<text x="110.0" y="604" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="middle">27 Sep</text>
+<line x1="314.0" y1="570" x2="314.0" y2="578" stroke="#52514e"/>
+<text x="314.0" y="604" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="middle">28 Sep</text>
+<line x1="518.0" y1="570" x2="518.0" y2="578" stroke="#52514e"/>
+<text x="518.0" y="604" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="middle">29 Sep</text>
+<line x1="722.0" y1="570" x2="722.0" y2="578" stroke="#52514e"/>
+<text x="722.0" y="604" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="middle">30 Sep</text>
+<line x1="926.0" y1="570" x2="926.0" y2="578" stroke="#52514e"/>
+<text x="926.0" y="604" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="middle">1 Oct</text>
+<line x1="1130.0" y1="570" x2="1130.0" y2="578" stroke="#52514e"/>
+<text x="1130.0" y="604" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="middle">2 Oct</text>
+<line x1="110" y1="570" x2="1130" y2="570" stroke="#52514e" stroke-width="1.5"/>
+<polyline points="207.8,569.8 381.8,569.3 401.1,569.3 512.3,541.2 736.0,435.8 776.8,381.0 1124.3,163.8" fill="none" stroke="#2a78d6" stroke-width="3" stroke-linejoin="round"/>
+<line x1="1124.3049999999998" y1="163.84615384615387" x2="1124.9" y2="569.873076923077" stroke="#eb6834" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="512.3050000000001" cy="541.2307692307693" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="736.025" cy="435.8" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="776.825" cy="380.96923076923076" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="1124.3049999999998" cy="163.84615384615387" r="6" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="1124.9" cy="569.873076923077" r="7" fill="#fcfcfb" stroke="#eb6834" stroke-width="3"/>
+<text x="415.125" y="529.2307692307693" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#0b0b0b" text-anchor="start">28 Sep 23:20: 1.7 GB</text>
+<text x="722.025" y="421.8" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#0b0b0b" text-anchor="end">30 Sep 01:39: 7.93 GB</text>
+<text x="762.825" y="366.96923076923076" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#0b0b0b" text-anchor="end">30 Sep 06:27: 11.17 GB</text>
+<text x="1108.3049999999998" y="159.84615384615387" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#0b0b0b" text-anchor="end">1 Oct 23:20: 24 GB</text>
+<text x="1108.3049999999998" y="187.84615384615387" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" fill="#0b0b0b" text-anchor="end">≈800× the 30 MB budget</text>
+<text x="1106.9" y="549.873076923077" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#0b0b0b" text-anchor="end">after restart: 7.4 MB</text>
+<text x="124" y="507.8307692307692" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#0b0b0b" text-anchor="start">27 Sep – 28 Sep 10:15:</text>
+<text x="124" y="533.8307692307692" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#0b0b0b" text-anchor="start">10–42 MB (normal)</text>
+<line x1="110" y1="568.4923076923077" x2="1130" y2="568.4923076923077" stroke="#eb6834" stroke-width="3"/>
+<text x="824.0" y="458.3076923076923" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" fill="#0b0b0b" text-anchor="start">Apple’s budget: 30 MB</text>
+<text x="824.0" y="484.3076923076923" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="start">the orange line along the axis</text>
+<text x="40" y="654" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="normal" fill="#52514e" text-anchor="start">Lines join sparse samples.</text>
+<text x="1160" y="654" text-anchor="end" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" fill="#52514e">Data: macOS diagnostics on one MacBook Pro M3 Pro, Sep–Oct 2026</text>
+</svg>

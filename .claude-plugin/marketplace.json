@@ -1,0 +1,14 @@
+{
+  "name": "fseventsd-runaway",
+  "description": "Detect and fix a runaway macOS fseventsd without a reboot.",
+  "owner": {
+    "name": "talkstream"
+  },
+  "plugins": [
+    {
+      "name": "fseventsd-health",
+      "source": "./plugin/fseventsd-health",
+      "description": "Warns at session start when the macOS fseventsd daemon has grown far beyond its memory budget, and prints the fix."
+    }
+  ]
+}
