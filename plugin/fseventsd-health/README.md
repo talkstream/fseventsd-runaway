@@ -29,7 +29,7 @@ claude --plugin-dir ./plugin/fseventsd-health
 ## What it does NOT do
 
 - Changes nothing on your system and never runs sudo.
-- Does not sample CPU (memory only), so it finishes in well under a second; the hook timeout is 5 s and every external call is limited to 2 s.
+- Does not sample CPU (memory only), so it finishes in well under a second; the hook timeout is 10 s and every external call is limited to 2 s.
 - Does nothing on non-macOS systems.
 - Never breaks session start: any error ends silently with exit code 0.
 
