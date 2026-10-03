@@ -145,7 +145,7 @@ Summary: the cost was swap, a busy core and a warmer machine, not a worn-out dri
 - What each app did after the restart.
 - That 70 °C is "normal" for this chip: Apple publishes no throttle temperature.
 
-This deserves an Apple Feedback report: a system daemon at 800 times its own budget that does not recover. I will add the Feedback ID here when I have one. On the Claude Code side, detection and fewer FSEvents registrations are requested in [claude-code#98769](https://github.com/anthropics/claude-code/issues/98769). If you see the same pattern, add your numbers to the issues below.
+Reported to Apple as FB25046068: a system daemon at 800 times its own budget that does not recover. On the Claude Code side, detection and fewer FSEvents registrations are requested in [claude-code#98769](https://github.com/anthropics/claude-code/issues/98769). If you see the same pattern, add your numbers to the issues below.
 
 ## 10. Tools and sources
 
