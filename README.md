@@ -161,4 +161,19 @@ Sources:
 - Howard Oakley on [swap](https://eclecticlight.co/2022/12/02/tracking-swap-space-is-it-wearing-out-your-ssd/) and [SSD lifetime](https://eclecticlight.co/2026/02/26/how-long-will-my-macs-ssd-last/).
 - Apple: [operating temperature](https://support.apple.com/en-us/117736), [kernel_task](https://support.apple.com/en-us/102172), [battery](https://www.apple.com/batteries/maximizing-performance/), and `FSEvents.h` in the macOS SDK.
 
+## 11. Follow-up, 2–3 Oct: hot again, and it was not `fseventsd`
+
+A day after the fix the Mac got hot again, right after a "simple" new task in Claude Code. `fseventsd-check.sh` said OK, and it was right.
+
+- **The daemon stayed healthy.** After the restart I installed macOS 27.0.1 and rebooted, so this is a new build and a fresh process. The hourly watch log then shows 16 checks over 42 hours (gaps while the Mac slept), all OK, at 4.6 to 5.5 MB.
+- **Including under heavy parallel CPU load.** In that window one session ran eight agents in parallel, started together at 19:16. Between 19:17 and 21:40 the session fetched 61 short videos (two more near midnight) and decoded at least 58 of them in software into contact sheets. Three hourly checks fell inside that window: 4.9 to 5.1 MB, all OK. The event log (log-file IDs as in section 3, listing read as root) shows that this run was not a file-event flood: 22 to 190 events per second per hour in that window, an ordinary rate, against 5,715 per second on the flood day.
+- **Most likely the heat was that workload itself.** The daemon was fine throughout, and the next evening, with no heavy local jobs running, 30 two-second `macmon` samples gave a median CPU temperature of 43.4 °C, 9.3 W of system power and fans at 0 rpm.
+- **An independent data point.** Another user's two Macs had `fseventsd` at about 6 MB, one of them with 31 mostly idle headless `claude` processes piled up ([comment on #98769](https://github.com/anthropics/claude-code/issues/98769#issuecomment-5956822546)); whether those processes held FSEvents streams is unconfirmed. They did not reproduce the leak there, and heavy CPU work at ordinary event rates did not reproduce it here. The 1 Oct leak came after days of flood and then did not recover. That is consistent with the after-effect described in section 3, not proof of a mechanism.
+
+If your Mac runs hot, run the check first. If it says OK, look for the real load with `top -o power` instead of restarting the daemon. For agent setups, run heavy local steps (video, transcription, mutation tests, builds) in one queue, not one per agent, and decode video in hardware (`-hwaccel videotoolbox`).
+
+A note on measurement: on macOS 27, `macmon`'s `cpu_power` reads 0 W, and once in 300 samples it jumped to 3,564 W ([macmon#76](https://github.com/vladkens/macmon/issues/76)). I use only its temperature, system power and fan readings, and report medians for the longer series: the spike also inflates system power, which `macmon` reports as the larger of the SMC reading and the sum of CPU, GPU and ANE power.
+
+---
+
 MIT licensed. Measurements from one machine; your numbers will differ.
